@@ -1,0 +1,436 @@
+body {
+    height: 100vh;
+    margin: 0;
+    /* overflow:hidden; */
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+    height: 70vh;
+}
+
+/*style carousel button */
+.custom-carousel-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black */
+    border-radius: 50%;
+    /* Make it circular */
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* postioning */
+.carousel-control-prev {
+    left: 20px;
+}
+
+.carousel-control-next {
+    right: 20px;
+}
+
+/* Change icon color to white */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+/* navbar sticky */
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* page content styling */
+.content {
+
+    height: 200vh;
+    padding: 20px;
+    text-align: center;
+}
+
+/*Customize navbar */
+.navbar {
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 100%;
+    z-index: 1050;
+}
+.navbar-nav{
+    display: flex !important;
+}
+.nav-item{
+    display: block !important;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    padding: 10px 15px;
+   
+}
+
+/*make the search bar stand out */
+.form-control {
+    width: 200px;
+}
+
+/*logo styling */
+.logo {
+    height: 40px;
+    width: auto;
+    margin-right: 20px;
+    /* Space between logo and text */
+}
+
+/* image style */
+.img-fluid {
+    max-width: 100%;
+    height: 100vh;
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+.shadow {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Centering */
+.text-center {
+    text-align: center;
+}
+
+/* Custom image styling */
+.img-custom {
+    width: 100%;
+    height: 300px;
+    /* Adjust as needed */
+    object-fit: cover;
+    /* Ensures proper cropping */
+}
+
+/* Paragraph styling */
+.image-text {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Dropdown opens on hover */
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.dropdown-menu {
+    background: linear-gradient(to right, #ff9900, #ffcc33);
+    /* Orange Gradient */
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    /* Smooth Shadow */
+}
+
+/* Dropdown Item Styling */
+.dropdown-item {
+    color: white !important;
+    /* White text */
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+/* Hover Effect on Items */
+.dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.3);
+    /* Light white effect */
+    transform: translateX(5px);
+    /* Slight move effect */
+}
+
+/* BBQ Style */
+.bg-section {
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.5);
+}
+
+/* burger Style */
+.bg-burger-section {
+    background: linear-gradient(to right, #ff4e00, #f9d423);
+    /* Fiery Orange to Cheesy Yellow */
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.5);
+}
+
+/* assored Donut Style */
+.bg-donut-section {
+    background: linear-gradient(to right, #ff0084, #ffdb58);
+    /* Sweet Pink to Creamy Gold */
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 20, 147, 0.5);
+}
+
+/* orange-juice Style */
+.bg-orange-juice-section {
+    background: linear-gradient(to right, #ff9900, #ffcc33);
+    /* Vibrant Orange to Golden Yellow */
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 153, 0, 0.5);
+    /* Soft Orange Glow */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.counter-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+    background: white;
+}
+
+.counter-box {
+    text-align: center;
+}
+
+.counter-box img {
+    width: 80px;
+    /* Adjust icon size */
+    transition: filter 0.5s ease-in-out;
+}
+
+.counter {
+    font-size: 36px;
+    color: green;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* salad icon Bounce */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.counter-box img {
+    width: 80px;
+    transition: transform 0.3s ease-in-out;
+    animation: bounce 2s infinite;
+}
+
+/* Hover Effect */
+.counter-box img {
+    width: 80px;
+    transition: filter 0.5s ease-in-out;
+}
+
+.counter-box:hover img {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+}
+
+
+.image-container {
+    text-align: center;
+    /* Center align the image */
+    margin-top: 20px;
+    /* Add space above the image */
+}
+
+.Man-image {
+    width: 100%;
+    /* Adjust image width */
+    max-width: 1200px;
+    /* Prevent it from getting too large */
+    height: auto;
+    border-radius: 10px;
+    /* Rounded corners for style */
+}
+
+
+.recipe-description {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    /* White text for better contrast */
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    /* Smooth gradient */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.recipe-description:hover {
+    transform: scale(1.02);
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    /* Color shift on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Form Heading */
+.container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+/* Flexbox for Name & Email */
+.form-group.row {
+    display: flex;
+    gap: 10px; /* Space between fields */
+    justify-content: space-between;
+}
+
+/* Make inputs share space equally */
+.form-group.row .input-field {
+    flex: 1;
+}
+
+/* Form Fields */
+.input-field {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Focus Effect on Inputs */
+.input-field:focus {
+    border-color: #ff9900;
+    box-shadow: 0px 0px 5px rgba(255, 153, 0, 0.5);
+    outline: none;
+}
+
+/* Textarea Field */
+textarea.input-field {
+    height: 150px;
+    resize: none;
+}
+
+/* Submit Button */
+.submit-btn {
+    background: #ff9900;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+    background: #06d12b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 50px;
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Footer Sections */
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+/* Footer Links */
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Icons */
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff9900;
+}
+
+/* Copyright */
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .form-group.row {
+        flex-direction: column;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
